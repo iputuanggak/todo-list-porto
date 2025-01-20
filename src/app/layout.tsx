@@ -26,7 +26,7 @@ export default function RootLayout({
         {children}
         <div className="pointer-events-none fixed inset-0">
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/overlay.png`}
+            src={`/img/overlay.png`}
             alt=""
             className="h-full -translate-y-40 scale-150 object-cover object-right md:object-left"
           />
