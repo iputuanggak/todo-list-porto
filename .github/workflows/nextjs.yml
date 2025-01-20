@@ -33,9 +33,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Read a variable
-        run: echo "My APP_ID value is ${{secrets.NEXT_PUBLIC_BASE_URL}}"
-
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
