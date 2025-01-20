@@ -5,6 +5,9 @@ import CardList from "@/components/CardList";
 import Link from "next/link";
 
 export default function Home() {
+
+  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
+
   return (
     <main className="mx-auto my-4 max-w-[720px] px-4">
       <Link
