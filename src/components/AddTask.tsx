@@ -44,7 +44,6 @@ export default function AddTask() {
     // const formObject = formDataToObject(formData);
     const task = formData.get("task") as string;
     const description = formData.get("description") as string;
-    const status = "ongoing";
     const cardColor = getRandomElement(colorOptions);
 
     addTask({
