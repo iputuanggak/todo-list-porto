@@ -11,7 +11,11 @@ export default function Home() {
         href="https://github.com/iputuanggak/todo-list-porto"
         className="mb-2 flex gap-1"
       >
-        <img src="/img/github-mark.png" alt="" className="size-4 self-center" />
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/github-mark.png`}
+          alt=""
+          className="size-4 self-center"
+        />
         <p className="text-sm underline md:text-base">
           https://github.com/iputuanggak/todo-list-porto
         </p>
