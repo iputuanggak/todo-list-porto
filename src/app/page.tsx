@@ -12,7 +12,7 @@ export default function Home() {
         className="mb-2 flex gap-1"
       >
         <img
-          src={`img/github-mark.png`}
+          src={`${process.env.NEXT_PUBLIC_BASE_URL}/img/github-mark.png`}
           alt=""
           className="size-4 self-center"
         />
