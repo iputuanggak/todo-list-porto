@@ -17,12 +17,12 @@ export default function Button({
   switch (variant) {
     case "filled":
       BackgroundBorderColor =
-        " border-foreground bg-foreground hover:bg-[#343A40] text-background ";
+        " border-primary bg-primary hover:bg-primary-subdued text-secondary ";
       break;
 
     case "outline":
       BackgroundBorderColor =
-        " border-foreground hover:bg-[#E9ECEF]";
+        " border-primary hover:bg-secondary-subdued";
       break;
 
     default:

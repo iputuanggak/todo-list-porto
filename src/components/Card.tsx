@@ -35,7 +35,7 @@ export default function Card({
     };
     return (
       <form
-        className={`flex flex-col rounded-3xl bg-background p-4 shadow`}
+        className={`flex flex-col rounded-3xl bg-secondary p-4 shadow`}
         onSubmit={handleSaveChanges}
       >
         <div>
@@ -67,7 +67,7 @@ export default function Card({
   } else {
     return (
       <div
-        className={`flex flex-col gap-1 rounded-3xl p-4 shadow ${isDone ? "bg-[#CED4DA]" : cardColor} `}
+        className={`flex flex-col gap-1 rounded-3xl p-4 shadow ${isDone ? "bg-secondary-disabled" : cardColor} `}
       >
         <div>
           <h2 className={`text-2xl ${isDone ? "line-through" : ""}`}>{task}</h2>
@@ -135,18 +135,18 @@ function MoreButtonCard({
         viewBox="0 -960 960 960"
         width="24px"
         fill="6C757D"
-        className="cursor-pointer hover:fill-[#212529]"
+        className="cursor-pointer hover:fill-primary-subdued"
         onClick={() => setIsActive(!isActive)}
       >
         <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
       </svg>
       {isActive ? (
-        <ul className="absolute top-full z-10 cursor-pointer rounded bg-background shadow-md">
-          <li className="px-3 py-2 hover:bg-[#E9ECEF]" onClick={onIsEditing}>
+        <ul className="absolute top-full z-10 cursor-pointer rounded bg-secondary shadow-md">
+          <li className="px-3 py-2 hover:bg-secondary-subdued" onClick={onIsEditing}>
             Edit
           </li>
           <li
-            className="px-3 py-2 hover:bg-[#E9ECEF]"
+            className="px-3 py-2 hover:bg-secondary-subdued"
             onClick={handleRemoveTask}
           >
             Remove

@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--foreground)",
+        secondary: "var(--background)",
+        "primary-subdued": "#343A40",
+        "secondary-subdued": "#E9ECEF",
+        "secondary-disabled": "#CED4DA"
       },
       fontFamily: {
-        sans: ['var(--noto_sans)']
+        sans: ["var(--noto_sans)"],
       },
     },
   },

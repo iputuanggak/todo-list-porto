@@ -62,7 +62,7 @@ export default function AddTask() {
     <div className="fixed bottom-4 left-0 right-0 z-30 flex flex-col gap-5 px-4">
       {isActive ? (
         <form
-          className="m-auto flex w-full max-w-[720px] flex-col gap-2 rounded-3xl bg-background p-4 shadow-xl"
+          className="m-auto flex w-full max-w-[720px] flex-col gap-2 rounded-3xl bg-secondary p-4 shadow-xl"
           onSubmit={handleSubmit}
         >
           <textarea
@@ -79,7 +79,7 @@ export default function AddTask() {
       ) : null}
 
       <button
-        className={`self-center rounded-full bg-foreground p-2 shadow-xl`}
+        className={`self-center rounded-full bg-primary p-2 shadow-xl`}
         onClick={() => setIsActive(!isActive)}
       >
         <svg
