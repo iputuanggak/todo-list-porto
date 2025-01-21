@@ -79,7 +79,7 @@ export default function AddTask() {
       ) : null}
 
       <button
-        className={`self-center rounded-full bg-primary p-2 shadow-xl`}
+        className={`self-center rounded-full bg-primary p-2 shadow-xl hover:bg-primary-subdued`}
         onClick={() => setIsActive(!isActive)}
       >
         <svg
